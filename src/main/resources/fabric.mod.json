@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "cookierunmod",
+	"version": "${version}",
+	"name": "CookieRun Mod",
+	"description": "CookieRun Mod that inserts various features from Cookierun franschise",
+	"authors": [
+		"Nalunaroco"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/cookierunmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.nalunaroco.cookierunmod.CookieRunMod"
+		],
+		"fabric-datagen": [
+			"io.github.nalunaroco.cookierunmod.CookieRunModDataGenerator"
+		],
+		"client": [
+			"io.github.nalunaroco.cookierunmod.CookieRunModClient"
+		]
+	},
+	"mixins": [
+		"cookierunmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
